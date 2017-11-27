@@ -1,0 +1,33 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter multiplicands A and press the 'Enter' to continue:");
+            var a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter a multiplier B and press the 'Enter' to get a result");
+            var b = int.Parse(Console.ReadLine());
+
+            int c = Product(a, b);
+
+            Console.WriteLine("A Product of Numbers {0} and {1} is {2}", a, b, c);
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+        }
+
+        private static int Product(int a, int b)
+        {
+            return a * b;
+        }
+
+
+
+
+    }
+}
