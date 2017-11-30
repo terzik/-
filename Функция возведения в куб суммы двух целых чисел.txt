@@ -1,0 +1,29 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please anter a number A and press 'Enter' to continue:");
+            var a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter a number B and press 'Enter' to get a result:");
+            var b = int.Parse(Console.ReadLine());
+
+            var c = Sum(a, b);
+
+            double Result = Math.Pow((int)c, 3);
+
+            Console.WriteLine("Result of raise to power 3 a sum of {0} and {1} is {2}", a, b, Result);
+            Console.WriteLine("Please press any key to continue...");
+            Console.ReadKey();
+        }
+        static int Sum(int a, int b)
+        {
+            return a + b;
+        }
+    }
+}

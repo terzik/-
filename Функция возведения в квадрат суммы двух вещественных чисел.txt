@@ -1,0 +1,24 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number A and press the 'Enter' to continue:");
+            var a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter a number B and press the 'Enter' to get a result:");
+            var b = double.Parse(Console.ReadLine());
+
+            double Result = Math.Pow((a+b), 2);
+
+            Console.WriteLine("Result of raising to power 2 a sum of {0} and {1} is {2}", a, b, Result);
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}

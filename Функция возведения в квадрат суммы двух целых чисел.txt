@@ -10,24 +10,15 @@ namespace New
             Console.WriteLine("Enter a number A and press the 'Enter' to continue:");
             var a = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter a number B and press the 'Enter' to get a result");
+            Console.WriteLine("Enter a number B and press the 'Enter' to get a result:");
             var b = int.Parse(Console.ReadLine());
 
-            int c = Difference(a, b);
+            double Result = Math.Pow((int)(a+b), 2);
 
-            Console.WriteLine("A difference of {0} and {1} is {2}", a, b, c);
+            Console.WriteLine("Result of raising a sum of {0} and {1} to power 2 is {2}", a, b, Result);
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
-
-        private static int Difference(int a, int b)
-        {
-            return a - b;
-        }
-
-
-
-
     }
 }

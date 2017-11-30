@@ -1,0 +1,21 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a number you want to raise to power 2 and press the 'Enter' to continue:");
+            var a = int.Parse(Console.ReadLine());
+
+            double Result = Math.Pow((int)a, 2);
+            
+            Console.WriteLine("Result of raising a number {0} to power 2 is {1}", a, Result);
+            
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+        }
+    }
+}

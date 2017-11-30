@@ -1,0 +1,21 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter a number A and press 'Enter' to continue:");
+            var a = int.Parse(Console.ReadLine());
+
+            double Result = Math.Pow((int)a, 3);
+
+            Console.WriteLine("Result of raise to power 3 a number {0} is {1}", a, Result);
+
+            Console.WriteLine("Please press any key to continue...");
+            Console.ReadKey();
+        }
+    }
+}

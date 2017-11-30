@@ -1,0 +1,24 @@
+using System;
+
+
+namespace New
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please, enter a number A and press 'Enter' to continue:");
+            var a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please, enter a number B and press 'Enter' to get a result:");
+            var b = double.Parse(Console.ReadLine());
+
+            double Result = Math.Pow((a * b), 2);
+
+            Console.WriteLine("Result of rais to power 2 a product of {0} and {1} is {2}", a, b, Result);
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+    }
+}
